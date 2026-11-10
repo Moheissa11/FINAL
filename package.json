@@ -1,0 +1,15 @@
+{
+  "name": "eartify-space-explorer",
+  "version": "1.1.0",
+  "private": true,
+  "description": "EARTIFY interactive space and landmark explorer",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test",
+    "validate:datasets": "python scripts_validate_datasets.py"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

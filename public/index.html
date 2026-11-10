@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070a12" />
+  <meta name="description" content="EARTIFY — compare planetary environments and explore mission concepts." />
+  <title>EARTIFY — Beyond the known</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=nova-command-dashboard-1" />
+</head>
+<body>
+  <div class="space-noise"></div>
+  <div class="stars stars-a"></div><div class="stars stars-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Eartify home"><span class="brand-mark">◉</span> EARTIFY</span></a>
+    <nav class="nav">
+      <a href="#explore" data-i18n="navExplore">Explore</a>
+      <a href="#compare" data-i18n="navCompare">3D Explorer</a>
+      <a href="#library" data-i18n="libraryNav">My Library</a>
+      <a href="#mission" data-i18n="navMission">Mission Lab</a>
+      <a href="#research" data-i18n="navResearch">Research</a>
+    </nav>
+    <div class="account-actions"><button class="account-btn" id="accountButton" type="button" data-i18n="signIn">Sign in / Log in</button><button class="lang-btn" id="languageToggle" aria-label="Switch language">عربي</button></div>
+  </header>
+
+  <main>
+    <div class="account-dock"><button id="accountMenuButton" type="button">Sign in / Log in</button><button id="historyButton" type="button">History</button><button id="logoutButton" type="button" hidden>Log out</button></div>
+    <section class="hero section nova-hero" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span><span data-i18n="heroEyebrow">SYSTEM STATUS · NOMINAL</span></div>
+        <h1 data-i18n="heroTitle">EXPLORE.<br>DISCOVER.<br><em>ENDURE.</em></h1>
+        <p data-i18n="heroText">Navigate the unknown, discover new worlds, and expand the boundaries of human knowledge.</p>
+        <div class="hero-actions">
+          <a class="primary-btn lift" href="#explore"><span data-i18n="startExploring">Launch exploration</span><b>↗</b></a>
+          <a class="text-link" href="#compare" data-i18n="howItWorks">VIEW 3D EXPLORER <span>✣</span></a>
+        </div>
+        <div class="hero-proof"><span class="proof-line"></span><span data-i18n="heroFoot">EARTIFY DEEP SPACE INTELLIGENCE</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="planet planet-hero" aria-label="High-resolution Earth"></div>
+        <div class="planet-moon"></div>
+        <div class="float-label label-top"><span class="tiny-dot"></span> TARGET / EARTH-01</div>
+        <div class="float-label label-bottom">PLANETARY SCAN <b>LIVE</b></div>
+        <div class="visual-glow"></div>
+        <div class="hero-target-chip"><small data-i18n="activeTarget">ACTIVE TARGET</small><b>EARTH · SOL III</b><span data-i18n="missionReady">MISSION READY</span></div>
+      </div>
+      <aside class="hero-metrics" aria-label="EARTIFY system metrics">
+        <div><i>◎</i><b>07</b><small>PLANETS</small></div><div><i>✧</i><b>200+</b><small>WORLDS TO EXPLORE</small></div><div><i>⌁</i><b>LIVE</b><small>RESEARCH SYSTEM</small></div>
+      </aside>
+      <div class="nova-dashboard">
+        <article class="nova-widget fleet-widget"><header><span data-i18n="fleetStatus">EXPLORATION FLEET</span><b>03 / 08</b></header><div class="holo-rover"><div class="rover-body"></div><i></i><i></i><i></i></div><strong data-i18n="pathfinder">PATHFINDER ROVER</strong><small><em></em><span data-i18n="readyDeploy"> READY FOR DEPLOYMENT</span></small><div class="meter"><i></i></div></article>
+        <article class="nova-widget destination-widget"><header><span data-i18n="featuredDestination">FEATURED DESTINATION</span><b>01</b></header><div class="destination-moon"></div><strong data-i18n="moon">THE MOON</strong><small data-i18n="lunarZone">LUNAR RESEARCH ZONE</small><a href="#explore" data-i18n="openWorld">OPEN WORLD ↗</a></article>
+        <article class="nova-widget scan-widget"><header><span data-i18n="solarScan">SOLAR SYSTEM SCAN</span><b>LIVE</b></header><div class="mini-orbit"><i class="sun-core"></i><i class="orbit-p1"></i><i class="orbit-p2"></i><i class="orbit-p3"></i><i class="orbit-p4"></i></div><strong data-i18n="eightPlanets">8 PLANETS</strong><small data-i18n="trackedBodies">ORBITAL BODIES TRACKED</small><a href="#compare" data-i18n="view3D">VIEW 3D MODEL ↗</a></article>
+        <article class="nova-widget timeline-widget"><header><span data-i18n="missionTimeline">MISSION TIMELINE</span><b data-i18n="upcoming">UPCOMING</b></header><div class="timeline-entry done"><i></i><span><b data-i18n="worldDiscovery">World discovery</b><small data-i18n="catalogued">DESTINATION CATALOGUED</small></span><em>COMPLETE</em></div><div class="timeline-entry active"><i></i><span><b data-i18n="environmentScan">Environmental scan</b><small data-i18n="analysing">ANALYSING CONDITIONS</small></span><em>LIVE</em></div><div class="timeline-entry"><i></i><span><b data-i18n="researchCompare">Research & compare</b><small data-i18n="awaitingInput">AWAITING INPUT</small></span></div></article>
+      </div>
+      <div class="scroll-cue"><span></span><small data-i18n="scroll">SCROLL TO EXPLORE</small></div>
+    </section>
+
+    <section class="intro section" id="explore">
+      <div class="section-kicker reveal">01 — <span data-i18n="discoverKicker">DISCOVER THE ENVIRONMENT</span></div>
+      <div class="section-heading reveal">
+        <h2 data-i18n="discoverTitle">Every world has<br>a different <em>story.</em></h2>
+        <p data-i18n="discoverText">Start with the Moon and Mars, then describe any destination you want to investigate. EARTIFY turns the details into a mission-focused comparison.</p>
+      </div>
+      <div class="world-grid">
+        <article class="world-card moon-card reveal lift" data-world="Moon">
+          <div class="world-image moon-image"></div><div class="card-index">WORLD 01 / NATURAL SATELLITE</div>
+          <div class="world-bottom"><div><h3 data-i18n="moon">The Moon</h3><p data-i18n="moonDesc">Airless. Ancient. Extreme.</p></div><button class="round-arrow select-world" data-place="Moon" aria-label="Explore the Moon">↗</button></div>
+        </article>
+        <article class="world-card mars-card reveal lift" data-world="Mars">
+          <div class="world-image mars-image"></div><div class="card-index">WORLD 02 / TERRESTRIAL PLANET</div>
+          <div class="world-bottom"><div><h3 data-i18n="mars">Mars</h3><p data-i18n="marsDesc">Dusty. Cold. Full of questions.</p></div><button class="round-arrow select-world" data-place="Mars" aria-label="Explore Mars">↗</button></div>
+        </article>
+        <article class="world-card custom-card reveal lift">
+          <div class="custom-orb">＋</div><div class="card-index">WORLD 03 / YOUR NEXT TARGET</div>
+          <div class="world-bottom"><div><h3 data-i18n="yourWorld">Your world.</h3><p data-i18n="yourWorldDesc">Bring a location into focus.</p></div><a class="round-arrow" href="#compare" aria-label="Add a destination">↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="compare-section section" id="compare">
+      <div class="section-kicker reveal">02 — <span data-i18n="compareKicker">COMPARE & UNDERSTAND</span></div>
+      <div class="section-heading reveal">
+        <h2 data-i18n="compareTitle">Put any place<br>under the <em>lens.</em></h2>
+        <p data-i18n="compareText">Enter a destination and the environmental details you know. Unknown fields are okay — the analysis will flag what still needs evidence.</p>
+      </div>
+      <form class="compare-panel reveal" id="compareForm">
+        <div class="form-top"><div><span class="form-label">INTERACTIVE EXPLORER</span><h3 data-i18n="explorerHeading">Search any place or two things to compare</h3></div><span class="form-tag" data-i18n="interactiveView">INTERACTIVE VIEW · SIDE BY SIDE</span></div>
+        <div class="lookup-grid">
+          <label><span data-i18n="firstPlace">Search the first place or object</span><input id="place" name="place" required placeholder="e.g. Mars, Eiffel Tower, Cairo, Saturn" /></label>
+          <label><span data-i18n="secondPlace">Search a second place or object (optional)</span><input id="place2" name="place2" placeholder="e.g. Moon, Pyramids, Jupiter" /></label>
+        </div>
+        <div class="form-bottom"><p>Type a planet, moon, region, city, or landmark. EARTIFY searches for information automatically — no manual temperature or gravity entry needed.</p><button class="primary-btn lift" type="submit"><span data-i18n="searchExplore">Search & explore</span><b>↗</b></button></div>
+      </form>
+      <div class="comparison-result hidden" id="comparisonResult" aria-live="polite"></div>
+    </section>
+
+    <section class="standard-compare-section section" id="library">
+      <div class="section-kicker">03 — <span data-i18n="libraryKicker">YOUR RESEARCH LIBRARY</span></div>
+      <div class="section-heading"><h2 data-i18n="libraryTitle">Bring your sources.<br><em>Ask what matters.</em></h2><p data-i18n="libraryDesc">Save a public link or a text file, then ask questions or request a summary. Sign in to keep your own research private.</p></div>
+      <div class="compare-panel library-panel">
+        <div class="form-top"><div><span class="form-label" data-i18n="libraryAdd">ADD TO YOUR DATABASE</span><h3 data-i18n="libraryHeading">A searchable space for your files</h3></div><span class="form-tag">PRIVATE · UP TO 20 ACCOUNTS</span></div>
+        <form id="documentForm" class="library-add-form"><label><span data-i18n="sourceLink">Public link</span><input id="documentUrl" type="url" placeholder="https://…"></label><label><span data-i18n="orFile">Or choose a document (TXT, MD, CSV, JSON, HTML, XML, PDF, DOCX)</span><input id="documentFile" type="file" accept=".txt,.md,.csv,.json,.html,.htm,.xml,.pdf,.docx,text/plain,text/markdown,text/csv,application/json,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label><button class="primary-btn" type="submit" data-i18n="saveSource">Save source</button></form>
+        <div class="library-ask"><label><span data-i18n="askFiles">Ask your saved files</span><textarea id="documentQuestion" rows="2" placeholder="Summarize my files, find a fact, or collect data…"></textarea></label><button class="outline-btn" id="askDocuments" type="button" data-i18n="askNow">Ask EARTIFY</button></div>
+        <div class="ntrs-search"><label for="ntrsQuery">Search scientific literature (NASA · Crossref · arXiv)</label><div class="ntrs-search-row"><input id="ntrsQuery" type="search" placeholder="e.g. Mars rover navigation, lunar dust, lunar water…"><button class="outline-btn" id="ntrsSearchButton" type="button">Search research</button></div><div id="ntrsResults" class="ntrs-results" aria-live="polite"></div></div>
+        <div id="documentAnswer" class="document-answer hidden" aria-live="polite"></div><div id="documentList" class="document-list"><p class="disclaimer" data-i18n="signInLibrary">Sign in to see and save your documents.</p></div>
+      </div>
+    </section>
+    <section class="mission-section section" id="mission">
+      <div class="section-kicker reveal">04 — <span data-i18n="missionKicker">FROM PROBLEM TO POSSIBILITY</span></div>
+      <div class="mission-layout">
+        <div class="mission-copy reveal"><h2 data-i18n="missionTitle">Don't just explore.<br><em>Imagine what comes next.</em></h2><p data-i18n="missionText">EARTIFY can shape a challenge into a research direction, possible countermeasures, and a robot concept designed around the environment.</p>
+          <div class="mission-steps">
+            <div><span>01</span><p><b data-i18n="stepOne">Understand the challenge</b><small data-i18n="stepOneDesc">Identify environmental limits and mission risks.</small></p></div>
+            <div><span>02</span><p><b data-i18n="stepTwo">Research the evidence</b><small data-i18n="stepTwoDesc">Start from trusted scientific and mission sources.</small></p></div>
+            <div><span>03</span><p><b data-i18n="stepThree">Design a response</b><small data-i18n="stepThreeDesc">Explore a practical solution and robotic helper.</small></p></div>
+          </div>
+        </div>
+        <div class="robot-stage reveal" id="robotStage" role="button" tabindex="0" aria-label="Talk to the EARTIFY robot">
+          <div class="robot-halo"></div><div class="robot-grid"></div>
+          <div class="robot">
+            <div class="robot-antenna"></div><div class="robot-head"><span class="robot-eye"></span></div>
+            <div class="robot-neck"></div><div class="robot-body"><span class="robot-light"></span><span class="robot-panel"></span></div>
+            <div class="robot-arm arm-left"></div><div class="robot-arm arm-right"></div>
+            <div class="robot-leg leg-left"><i></i></div><div class="robot-leg leg-center"><i></i></div><div class="robot-leg leg-right"><i></i></div>
+          </div>
+          <div class="robot-caption"><span>CONCEPT / 001</span><b>Autonomous field explorer</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-section section" id="research">
+      <div class="research-card reveal">
+        <div><div class="section-kicker">04 — RESEARCH DESK</div><h2 data-i18n="researchTitle">Curiosity needs<br><em>credible sources.</em></h2><p data-i18n="researchText">Explore official planetary data and NASA image collections. Search results are useful leads; always open the original record and verify its context.</p></div>
+        <div class="research-links">
+          <a href="https://science.nasa.gov/solar-system/" target="_blank" rel="noreferrer"><span>NASA / SCIENCE</span><b>Solar System Exploration ↗</b></a>
+          <a href="https://pds.nasa.gov/" target="_blank" rel="noreferrer"><span>NASA / ARCHIVE</span><b>Planetary Data System ↗</b></a>
+          <a href="https://images.nasa.gov/" target="_blank" rel="noreferrer"><span>NASA / MEDIA</span><b>Image & Video Library ↗</b></a>
+          <a href="https://www.nasa.gov/hrp/" target="_blank" rel="noreferrer"><span>NASA / HUMAN SPACEFLIGHT</span><b>Human Research Program ↗</b></a>
+        </div>
+      </div>
+      <div class="image-search reveal">
+        <div><span class="form-label">NASA IMAGE LIBRARY</span><h3 data-i18n="imageSearchTitle">Bring the universe closer.</h3></div>
+        <form id="imageSearchForm"><input id="imageQuery" value="Mars rover" aria-label="Search NASA images"><button class="outline-btn lift" type="submit" data-i18n="searchImages">Search images ↗</button></form>
+        <div id="imageResults" class="image-results"></div>
+      </div>
+    </section>
+  </main>
+  <aside class="chat-panel" id="chatPanel" aria-label="Talk to EARTIFY robot" aria-hidden="true">
+    <div class="chat-head"><div class="chat-robot-mini" aria-hidden="true"><i></i><b></b></div><div><span class="live-dot"></span><b>EARTIFY AI</b><small>MISSION COMPANION · ONLINE</small></div><button id="closeChat" aria-label="Close chat">×</button></div>
+    <div class="chat-messages" id="chatMessages"><div class="chat-bubble bot">Hello, explorer! 👋 I'm Cero, your space companion. Ask me about planets, moons, places, or space missions.</div></div>
+    <form id="chatForm"><input id="chatInput" placeholder="Ask me anything about space…" autocomplete="off" required><button type="submit">➤</button></form>
+  </aside>
+  <footer><a class="brand" href="#home"><span class="brand-mark">◉</span> EARTIFY</span></a><p data-i18n="footerText">A student concept for exploring the next frontier. Not an official NASA product.</p><span>SPACE APPS CONCEPT · 2026</span></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="auth-backdrop" id="authBackdrop" hidden><section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="auth-scene"><div class="auth-solar"><i></i><b></b><em></em><span></span></div><div class="auth-robot"><i></i><b></b><span></span></div></div><div class="auth-content"><button class="auth-close" id="authClose" aria-label="Close">×</button><p class="section-kicker">EARTIFY ACCOUNT</p><h2 id="authTitle">Join the exploration.</h2><div class="auth-tabs"><button type="button" class="active" data-auth-mode="login">Log in</button><button type="button" data-auth-mode="signup">Sign up</button></div><form id="authForm"><label id="authNameWrap" hidden>Name<input id="authName" autocomplete="name"></label><label>Email<input id="authEmail" type="email" autocomplete="email" required></label><label>Password<input id="authPassword" type="password" minlength="8" autocomplete="current-password" required></label><button class="primary-btn" type="submit" id="authSubmit">Log in</button></form><p class="auth-note">Up to 20 accounts in this starter database. You can explore without signing in.</p><div id="authError" role="status"></div></div></section></div>
+  <div class="history-backdrop" id="historyBackdrop" hidden><section class="history-card"><button class="auth-close" id="historyClose">×</button><h2>Research history</h2><div id="historyItems"></div></section></div>
+  <button class="sidekick-launcher" id="sidekickLauncher" type="button" aria-label="Open Cero chat" aria-controls="chatPanel" aria-expanded="false">
+    <span class="sidekick-hint" id="sidekickHint" data-i18n="robotHint">Need a hand? I can help!</span>
+    <span class="welcome-bubble" id="welcomeBubble" role="status">Welcome to EARTIFY! I’m Cero. Let’s explore the universe together. 🚀</span>
+    <span class="sidekick-robot" aria-hidden="true">
+      <span class="robot-antenna"></span>
+      <span class="robot-head"><span class="robot-eye"></span><span class="robot-smile"></span></span>
+      <span class="robot-neck"></span>
+      <span class="robot-body"><span class="robot-light"></span><span class="robot-panel"></span></span>
+      <span class="robot-arm arm-left"></span><span class="robot-arm arm-right"></span>
+      <span class="robot-wheel wheel-a"></span><span class="robot-wheel wheel-b"></span><span class="robot-wheel wheel-c"></span>
+    </span>
+  </button>
+  <button class="edge-peek" id="edgePeek" type="button" aria-label="Open Cero chat"><span class="peek-antenna"></span><span class="peek-face"><i></i><b></b></span><span class="peek-fingers"><i></i><i></i><i></i><i></i></span></button>
+  <script src="/app.js?v=nova-command-dashboard-1"></script>
+</body>
+</html>

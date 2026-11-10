@@ -1,0 +1,5 @@
+{"user_input": "3ayz a2arn ben el ard wel qamar", "normalized_text": "عايز أقارن بين الأرض والقمر", "language": "arabizi", "intent": "comparison", "domain": "planetary_science", "entities": {}, "expected_action": "compare_entities"}
+{"user_input": "what's the latest Artemis update?", "normalized_text": "what is the latest Artemis update?", "language": "en", "intent": "current_research", "domain": "NASA", "entities": {}, "expected_action": "web_research"}
+{"user_input": "ازاي عرفت ان دي acceleration مش velocity؟", "normalized_text": "كيف عرفت أن هذه عجلة وليست سرعة؟", "language": "ar-eg", "intent": "explanation", "domain": "physics", "entities": {}, "expected_action": "explain_reasoning"}
+{"user_input": "write a python function to parse json", "normalized_text": "write a Python function to parse JSON", "language": "en", "intent": "coding", "domain": "programming", "entities": {}, "expected_action": "write_code"}
+{"user_input": "عايز بحث بمصادر وروابط موثوقة", "normalized_text": "أريد بحثًا بمصادر وروابط موثوقة", "language": "ar-eg", "intent": "research", "domain": "general_science", "entities": {}, "expected_action": "research_and_cite"}

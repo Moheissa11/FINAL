@@ -1,0 +1,5 @@
+{"user_input": "شكرا يا معلم", "normalized_text": "شكرًا", "language": "ar-eg", "intent": "thanks", "domain": "conversation", "entities": {}, "expected_action": "respond_naturally"}
+{"user_input": "hello there", "normalized_text": "hello there", "language": "en", "intent": "greeting", "domain": "conversation", "entities": {}, "expected_action": "greet"}
+{"user_input": "مش عارف أقصد انهي قانون", "normalized_text": "مش متأكد أي قانون أقصد", "language": "ar-eg", "intent": "ambiguous", "domain": "physics", "entities": {}, "expected_action": "ask_clarification"}
+{"user_input": "make it simpler with another example", "normalized_text": "make it simpler with another example", "language": "en", "intent": "explanation", "domain": "education", "entities": {}, "expected_action": "reexplain_differently"}
+{"user_input": "NASA mission data for Europa", "normalized_text": "NASA mission data for Europa", "language": "en", "intent": "research", "domain": "NASA", "entities": {}, "expected_action": "retrieve_primary_data"}
